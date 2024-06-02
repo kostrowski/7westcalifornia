@@ -1,0 +1,64 @@
+#main {
+    background-image: url(../assets/house_front_1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 9vw, 130px);
+}
+
+.hero-content {
+    color: white;
+    z-index: 1;
+}
+
+.headline-value {
+    font-size: 3em;
+}
+
+.hero-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 10%, rgba(255, 255, 255, 0) 100%);
+    z-index: 0;
+}
+
+.feature {
+    font-size: 1.5em;
+    margin: 0.25em;
+}
+
+.photo-scroll {
+    animation: photoscroll 90s linear infinite;
+    width: max-content;
+    max-width: none;
+    padding: 0;
+}
+
+.photo {
+    width: 400px;
+    height: 400px;
+    display: inline;
+    object-fit: cover;
+}
+
+@keyframes photoscroll {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(-50%, 0)
+    }
+}
